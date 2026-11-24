@@ -1,0 +1,19 @@
+[project]
+name = "robot-studio"
+version = "0.1.0"
+description = "Engineering workstation for our industrial robotic amr"
+readme = "README.md"
+authors = [
+    { name = "Sara Ahmed", email = "saraabdelrahman369@gmail.com" }
+]
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "pyside6==6.11.3",
+]
+
+[project.scripts]
+robot-studio = "robot_studio:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
